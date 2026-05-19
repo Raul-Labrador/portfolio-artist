@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Weeknd — XO Official</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="barra-nav">
+    <div class="container barra-inner">
+      <div class="logo">XO / THE WEEKND</div>
+
+      <div class="menu-links" id="menu-links">
+        <a href="#home"        class="enlace-nav" data-section="home">Home</a>
+        <a href="#biography"   class="enlace-nav" data-section="biography">Biography</a>
+        <a href="#albums"      class="enlace-nav" data-section="albums">Albums</a>
+        <a href="#tour"        class="enlace-nav" data-section="tour">On Tour</a>
+        <a href="#contact"     class="enlace-nav" data-section="contact">Contact</a>
+      </div>
+
+      <button class="btn-hamburguesa" id="menu-toggle" aria-label="Toggle menu">
+        <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="menu-movil" id="menu-movil">
+    <a href="#home"      class="enlace-movil" onclick="closeMenu()">Home</a>
+    <a href="#biography" class="enlace-movil" onclick="closeMenu()">Biography</a>
+    <a href="#albums"    class="enlace-movil" onclick="closeMenu()">Albums</a>
+    <a href="#tour"      class="enlace-movil" onclick="closeMenu()">On Tour</a>
+    <a href="#contact"   class="enlace-movil" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img
+        src="assets/img/hero.webp"
+        alt="The Weeknd Hero"
+        class="hero-img"
+        referrerpolicy="no-referrer"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content fade-in-up">
+      <p class="hero-subtitle">Abel Makkonen Tesfaye</p>
+      <h1 class="hero-title">THE <br /> WEEKND</h1>
+      <div class="hero-buttons">
+        <button class="btn-primary" data-scroll-to="albums">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+          Listen Now
+        </button>
+        <button class="btn-outline" data-scroll-to="tour">
+          View Tour
+        </button>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TRAYECTORIA -->
+  <section id="biography" class="section trayectoria">
+    <div class="container">
+      <div class="trayectoria-header">
+        <h2 class="reveal-up">The Journey</h2>
+        <div class="linea-roja reveal-up"></div>
+      </div>
+
+      <div class="capitulos">
+
+        <!-- Capítulo 1 -->
+        <div class="capitulo reveal-up">
+          <div class="foto-capitulo">
+            <div class="marco"></div>
+            <img src="assets/img/bio1.jpeg" alt="Underground Beginnings" referrerpolicy="no-referrer" />
+            <div class="año glass">2010-2012</div>
+          </div>
+          <div class="texto-capitulo">
+            <span class="etiqueta">CHAPTER 01</span>
+            <h3>The Underground Beginnings</h3>
+            <p class="descripcion">
+              "In late 2010, Tesfaye anonymously uploaded several songs to YouTube under the name 'The Weeknd'. The release of the mixtapes House of Balloons, Thursday, and Echoes of Silence in 2011 earned him immediate critical acclaim and a mysterious aura that would define his early career."
+            </p>
+            <div class="firma">
+              <div class="linea-firma"></div>
+              <span>Abel Tesfaye</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capítulo 2 -->
+        <div class="capitulo reverse reveal-up">
+          <div class="foto-capitulo">
+            <div class="marco"></div>
+            <img src="assets/img/bio2.jpeg" alt="Mainstream Explosion" referrerpolicy="no-referrer" />
+            <div class="año glass">2015-2017</div>
+          </div>
+          <div class="texto-capitulo">
+            <span class="etiqueta">CHAPTER 02</span>
+            <h3>Mainstream Explosion</h3>
+            <p class="descripcion">
+              "With the release of 'Beauty Behind the Madness' in 2015, featuring hits like 'The Hills' and 'Can't Feel My Face', Abel transitioned from an underground R&B enigma to a global pop powerhouse, winning his first two Grammy Awards."
+            </p>
+            <div class="firma">
+              <div class="linea-firma"></div>
+              <span>Abel Tesfaye</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capítulo 3 -->
+        <div class="capitulo reveal-up">
+          <div class="foto-capitulo">
+            <div class="marco"></div>
+            <img src="assets/img/bio3.jpg" alt="Cinematic Evolution" referrerpolicy="no-referrer" />
+            <div class="año glass">2020-Present</div>
+          </div>
+          <div class="texto-capitulo">
+            <span class="etiqueta">CHAPTER 03</span>
+            <h3>Cinematic Evolution</h3>
+            <p class="descripcion">
+              "The 'After Hours' era introduced a cinematic, red-suited character that explored the dark underbelly of Las Vegas. 'Blinding Lights' became the biggest Billboard Hot 100 song of all time, cementing his legacy as a defining artist of the decade."
+            </p>
+            <div class="firma">
+              <div class="linea-firma"></div>
+              <span>Abel Tesfaye</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cifras -->
+      <div class="cifras">
+        <div class="cifra-item glass reveal-up">
+          <h4 class="numero">4</h4>
+          <p class="etiqueta-cifra">Grammy Awards</p>
+        </div>
+        <div class="cifra-item glass reveal-up">
+          <h4 class="numero">20+</h4>
+          <p class="etiqueta-cifra">Billboard Hits</p>
+        </div>
+        <div class="cifra-item glass reveal-up">
+          <h4 class="numero">100M+</h4>
+          <p class="etiqueta-cifra">Monthly Listeners</p>
+        </div>
+        <div class="cifra-item glass reveal-up">
+          <h4 class="numero">7</h4>
+          <p class="etiqueta-cifra">Global Tours</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGACY -->
+  <section class="legacy">
+    <div class="legacy-overlay"></div>
+    <div class="container bloque-frase">
+      <h2 class="titulo-frase reveal-up">A LEGACY IN MOTION</h2>
+      <p class="cita reveal-up">
+        "I'm not a person who likes to talk about myself. I'd rather let the music do the talking."
+      </p>
+    </div>
+  </section>
+
+  <!-- LEGADO -->
+  <section class="section seccion-legado">
+    <div class="container grid-2">
+
+      <div class="legado-texto reveal-left">
+        <span class="etiqueta-linea">THE LEGACY</span>
+        <h2 class="titular">REDEFINING<br><span class="titulo-sangrado">R&B</span></h2>
+        <p>
+          From the enigmatic mixtapes of 2011 to the global dominance of the 2020s, Abel Tesfaye has consistently pushed the boundaries of sound and storytelling. His ability to blend dark, introspective lyrics with cinematic production has created a unique sonic universe that resonates across generations.
+        </p>
+        <div class="datos">
+          <div class="dato">
+            <h4>100B+</h4>
+            <p>TOTAL STREAMS</p>
+          </div>
+          <div class="dato">
+            <h4>#1</h4>
+            <p>ARTIST WORLDWIDE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="legado-foto reveal-right">
+        <div class="foto-circular">
+          <img src="assets/img/concierto2.jpeg" alt="Surfer" class="img-circular" />
+        </div>
+        <div class="tarjeta-flotante glass">
+          <span class="micro-etiqueta">CREATIVE VISION</span>
+          <p class="micro-cita">"The music is the only thing that matters."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section galeria">
+    <div class="container">
+      <div class="galeria-cabecera reveal-up">
+        <div class="galeria-cabecera-izq">
+          <span class="etiqueta-linea">VISUAL ARCHIVE</span>
+          <h2 class="galeria-titulo">CINEMATIC<br>MOMENTS</h2>
+          <p class="galeria-desc">
+            A curated collection of frames from the After Hours Til Dawn global odyssey. Each image captured to preserve the raw energy and atmospheric depth of the XO universe.
+          </p>
+        </div>
+        <div class="galeria-cabecera-der">
+          <span class="contador-fotos">01 <span class="line"></span> 06</span>
+        </div>
+      </div>
+
+      <div class="galeria-grid">
+        <div class="foto-item foto-principal reveal-up">
+          <img src="assets/img/galeria5.jpg" alt="Main Stage" class="foto-fondo" />
+          <div class="foto-capa"></div>
+          <div class="foto-info">
+            <span class="micro-etiqueta">MAIN STAGE</span>
+            <h3>THE ZENITH OF PERFORMANCE</h3>
+          </div>
+        </div>
+
+        <div class="fotos-secundarias">
+          <div class="foto-item reveal-up"><img src="assets/img/galeria1.jpg" alt="Gallery 1" class="foto-fondo" /></div>
+          <div class="foto-item reveal-up"><img src="assets/img/galeria2.webp" alt="Gallery 2" class="foto-fondo" /></div>
+          <div class="foto-item reveal-up"><img src="assets/img/galeria3.jpg" alt="Gallery 3" class="foto-fondo" /></div>
+          <div class="foto-item reveal-up"><img src="assets/img/galeria4.avif" alt="Gallery 4" class="foto-fondo" /></div>
+        </div>
+      </div>
+
+      <div class="banner-galeria reveal-up">
+        <img src="assets/img/galeria6.jpeg" alt="Full Archive" class="banner-img" />
+        <div class="banner-capa">
+          <a href="#" class="btn-primary-white">EXPLORE FULL VISUAL ARCHIVE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOGRAFÍA -->
+  <section id="albums" class="section fondo-discos">
+    <div class="container">
+      <div class="cabecera-seccion">
+        <div>
+          <h2>Discography</h2>
+          <p class="etiqueta-seccion">The Complete Journey</p>
+        </div>
+        <div class="pestañas">
+          <button class="pestaña active">Studio Albums</button>
+          <button class="pestaña">Mixtapes</button>
+        </div>
+      </div>
+
+      <!-- Disco destacado -->
+      <div class="etiqueta-ultimo">Latest Release</div>
+      <div class="disco-destacado glass reveal-scale">
+        <div class="portada">
+          <img
+            src="assets/img/disco0.webp"
+            alt="Hurry Up Tomorrow"
+            referrerpolicy="no-referrer"
+          />
+          <div class="portada-capa"></div>
+        </div>
+        <div class="disco-info">
+          <div class="disco-cabecera">
+            <div>
+              <h3 class="disco-titulo">Hurry Up Tomorrow</h3>
+              <p class="disco-meta">2025 • Studio Album</p>
+            </div>
+            <button class="btn-play-grande play-album-btn" data-album-url="https://open.spotify.com/intl-es/album/3OxfaVgvTxUTy7276t7SPU?si=m239CzjPT-q5CwVBNxesWQ" aria-label="Play Album">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+            </button>
+          </div>
+          <div class="lista-canciones scroll-custom">
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/5673WA8EEUSPx1ir26lhGW?si=9f93ff6dac32446a" data-idx="1"><span class="num">1</span><span class="nombre-cancion">Wake Me Up (con Justice)</span><span class="duracion">5:08</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/3AWDeHLc88XogCaCnZQLVI?si=d914fa2e6fe947f7" data-idx="2"><span class="num">2</span><span class="nombre-cancion">Cry For Me</span><span class="duracion">3:44</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/64JIAZ0bS7WoARYfWQGCoz?si=46ae2c82e3b34de5" data-idx="3"><span class="num">3</span><span class="nombre-cancion">I Can't Fucking Sing</span><span class="duracion">0:12</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/7DY756WOLyOz2Xnhw4EFiC?si=fe030ce9b01d41ef" data-idx="4"><span class="num">4</span><span class="nombre-cancion">São Paulo (con Anitta)</span><span class="duracion">5:01</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/6jDGDtQPC46pFqxph3qdbD?si=f6d57e095964469c" data-idx="5"><span class="num">5</span><span class="nombre-cancion">Until We're Skin & Bones</span><span class="duracion">0:22</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/5rzI6Jnlhx8DgVgsOLorfW?si=ce8e64b6a3da46f7" data-idx="6"><span class="num">6</span><span class="nombre-cancion">Baptized In Fear</span><span class="duracion">3:52</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/0sTBOp1hdayTjw6UOyPyi6?si=a6f11dca5bd049d9" data-idx="7"><span class="num">7</span><span class="nombre-cancion">Open Hearts</span><span class="duracion">3:54</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/4Msr8L0gHGDsLSBlk7pSPU?si=0b8e037a10454c20" data-idx="8"><span class="num">8</span><span class="nombre-cancion">Opening Night</span><span class="duracion">1:36</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/2gyHr9WqZeMtzJOpWGuGo6?si=48d3358a44134be8" data-idx="9"><span class="num">9</span><span class="nombre-cancion">Reflections Laughing (con Travis Scott & Florence)</span><span class="duracion">4:51</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/637oNhilCI9UlkWkUW4Grt?si=75d8cd2754ae46ad" data-idx="10"><span class="num">10</span><span class="nombre-cancion">Enjoy The Show (con Future)</span><span class="duracion">5:01</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/0FolPJnYMo71Z7qasTuoJT?si=dbf2cb4c57044c76" data-idx="11"><span class="num">11</span><span class="nombre-cancion">Given Up On Me</span><span class="duracion">5:54</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/0bcZ7xN9IcjSNxLerzR2yl?si=38b8dd1fabe9400d" data-idx="12"><span class="num">12</span><span class="nombre-cancion">I Can't Wait To Get There</span><span class="duracion">3:08</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/0FIDCNYYjNvPVimz5icugS?si=493f9bb5bf444196" data-idx="13"><span class="num">13</span><span class="nombre-cancion">Timeless (con Playboi Carti)</span><span class="duracion">4:16</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/2v0AG62ZHtD3I4YmTb3WYM?si=5e81a7bc3c464be8" data-idx="14"><span class="num">14</span><span class="nombre-cancion">Niagara Falls</span><span class="duracion">4:37</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/7rVmzyFA7f4rNGl9onF21E?si=faec84b037dd493e" data-idx="15"><span class="num">15</span><span class="nombre-cancion">Take Me Back To LA</span><span class="duracion">4:13</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/4sWQbsLLH2NEbO79DSZCL9?si=328db44b8a3b42f8" data-idx="16"><span class="num">16</span><span class="nombre-cancion">Big Sleep (con Giorgio Moroder)</span><span class="duracion">3:45</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/0K3w6WNawZlv6Izmsrye8o?si=a6f80dceb7b54f82" data-idx="17"><span class="num">17</span><span class="nombre-cancion">Give Me Mercy</span><span class="duracion">3:36</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/6i5fDaCzwxRrZtuvvcqoIf?si=b083cbea656b4b92" data-idx="18"><span class="num">18</span><span class="nombre-cancion">Drive</span><span class="duracion">3:08</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/5ZDKPFRZC6QlJpf8bCIXTs?si=2eec262b12ce4d9e" data-idx="19"><span class="num">19</span><span class="nombre-cancion">The Abyss (con Lana Del Rey)</span><span class="duracion">4:42</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/717s9KFmHhyy5t3xkStS56?si=79a511d5f8ef4895" data-idx="20"><span class="num">20</span><span class="nombre-cancion">Red Terror</span><span class="duracion">3:51</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/6n6GfXu4i22rdsmRKe2eIn?si=726606f5746e47b3" data-idx="21"><span class="num">21</span><span class="nombre-cancion">Without A Warning</span><span class="duracion">4:57</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            <button class="cancion" data-track-url="https://open.spotify.com/intl-es/track/4TDPlp7OSOjuDU3l7PCM04?si=f658991aa60e441b" data-idx="22"><span class="num">22</span><span class="nombre-cancion">Hurry Up Tomorrow</span><span class="duracion">4:51</span><svg class="icono-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+          </div>
+          <div class="disco-acciones">
+            <a href="https://open.spotify.com/intl-es/album/3OxfaVgvTxUTy7276t7SPU" target="_blank" rel="noopener" class="btn-primary">Listen on Spotify</a>
+            <a href="https://xo.store/collections/music/products/hurry-up-tomorrow-complete-edition-clear-vinyl-2lp" target="_blank" rel="noopener" class="btn-glass">Buy Vinyl</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rejilla de discos -->
+      <div class="rejilla-discos">
+
+        <div class="disco-card reveal-up">
+          <div class="caratula-wrap glass">
+            <img src="assets/img/disco1.jpg" alt="Dawn FM" referrerpolicy="no-referrer" />
+            <div class="caratula-capa">
+              <button class="btn-play-disco play-album-btn" data-album-url="https://open.spotify.com/intl-es/album/2nLOHgzXzwFEpl62zAgCEC?si=TNsMYOMARkWaWPV7ofpvxQ" aria-label="Play Album">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+            </div>
+          </div>
+          <h4 class="disco-nombre">Dawn FM</h4>
+          <p class="disco-año">2022</p>
+        </div>
+
+        <div class="disco-card reveal-up">
+          <div class="caratula-wrap glass">
+            <img src="assets/img/disco2.jpg" alt="After Hours" referrerpolicy="no-referrer" />
+            <div class="caratula-capa">
+              <button class="btn-play-disco play-album-btn" data-album-url="https://open.spotify.com/intl-es/album/4yP0hdKOZPNshxUOjY0cZj?si=ekxZLeOTTp6oehzYLO1_Rg" aria-label="Play Album">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+            </div>
+          </div>
+          <h4 class="disco-nombre">After Hours</h4>
+          <p class="disco-año">2020</p>
+        </div>
+
+        <div class="disco-card reveal-up">
+          <div class="caratula-wrap glass">
+            <img src="assets/img/disco3.jpg" alt="My Dear Melancholy" referrerpolicy="no-referrer" />
+            <div class="caratula-capa">
+              <button class="btn-play-disco play-album-btn" data-album-url="https://open.spotify.com/album/4qZBW3f2Q8y0k1A84d4iAO?si=vof1zTXiQYG4blmNBbsWCQ" aria-label="Play Album">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+            </div>
+          </div>
+          <h4 class="disco-nombre">My Dear Melancholy,</h4>
+          <p class="disco-año">2018</p>
+        </div>
+
+        <div class="disco-card reveal-up">
+          <div class="caratula-wrap glass">
+            <img src="assets/img/disco4.jpg" alt="Starboy" referrerpolicy="no-referrer" />
+            <div class="caratula-capa">
+              <button class="btn-play-disco play-album-btn" data-album-url="https://open.spotify.com/album/2ODvWsOgouMbaA5xf0RkJe?si=g_oCWu1FQl2BECtrw8Lz9Q" aria-label="Play Album">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+            </div>
+          </div>
+          <h4 class="disco-nombre">Starboy</h4>
+          <p class="disco-año">2016</p>
+        </div>
+
+        <div class="disco-card reveal-up">
+          <div class="caratula-wrap glass">
+            <img src="assets/img/disco5.jpg" alt="Beauty Behind the Madness" referrerpolicy="no-referrer" />
+            <div class="caratula-capa">
+              <button class="btn-play-disco play-album-btn" data-album-url="https://open.spotify.com/album/0P3oVJBFOv3TDXlYRhGL7s?si=KTCy0HorS1anFmdOx6-9MQ" aria-label="Play Album">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+            </div>
+          </div>
+          <h4 class="disco-nombre">Beauty Behind the Madness</h4>
+          <p class="disco-año">2015</p>
+        </div>
+
+        <div class="disco-card reveal-up">
+          <div class="caratula-wrap glass">
+            <img src="assets/img/disco6.jpg" alt="Kiss Land" referrerpolicy="no-referrer" />
+            <div class="caratula-capa">
+              <button class="btn-play-disco play-album-btn" data-album-url="https://open.spotify.com/album/6wRev1uYL0JsMsWqktJuVi?si=sIu8GxD1RKmSHGd2AGrvjA" aria-label="Play Album">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+            </div>
+          </div>
+          <h4 class="disco-nombre">Kiss Land</h4>
+          <p class="disco-año">2013</p>
+        </div>
+
+        <div class="disco-card reveal-up">
+          <div class="caratula-wrap glass">
+            <img src="assets/img/disco7.jpg" alt="Trilogy" referrerpolicy="no-referrer" />
+            <div class="caratula-capa">
+              <button class="btn-play-disco play-album-btn" data-album-url="https://open.spotify.com/intl-es/album/5EbpxRwbbpCJUepbqVTZ1U?si=djRVBuVGQzGSV8frcB7LdQTE" aria-label="Play Album">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+            </div>
+          </div>
+          <h4 class="disco-nombre">Trilogy</h4>
+          <p class="disco-año">2012</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GIRA -->
+  <section id="tour" class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2>After Hours Til Dawn</h2>
+        <p class="etiqueta-seccion">Global Stadium Tour</p>
+      </div>
+      <div class="gira-card glass">
+        <div class="fechas reveal-left">
+          <h3 class="fechas-titulo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#ff0000" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Upcoming Dates
+          </h3>
+          <div class="lista-fechas">
+
+            <div class="fecha">
+              <div class="fecha-numero">
+                <span class="mes">OCT</span>
+                <span class="dia">15</span>
+              </div>
+              <div class="fecha-info">
+                <p class="ciudad">Los Angeles, CA</p>
+                <p class="recinto">SoFi Stadium</p>
+              </div>
+              <button class="btn-sold-out">Sold Out</button>
+            </div>
+
+            <div class="fecha">
+              <div class="fecha-numero">
+                <span class="mes">OCT</span>
+                <span class="dia">18</span>
+              </div>
+              <div class="fecha-info">
+                <p class="ciudad">Phoenix, AZ</p>
+                <p class="recinto">State Farm Stadium</p>
+              </div>
+              <button class="btn-ticket">Tickets</button>
+            </div>
+
+            <div class="fecha">
+              <div class="fecha-numero">
+                <span class="mes">OCT</span>
+                <span class="dia">22</span>
+              </div>
+              <div class="fecha-info">
+                <p class="ciudad">Dallas, TX</p>
+                <p class="recinto">AT&amp;T Stadium</p>
+              </div>
+              <button class="btn-ticket">Tickets</button>
+            </div>
+
+            <div class="fecha">
+              <div class="fecha-numero">
+                <span class="mes">OCT</span>
+                <span class="dia">25</span>
+              </div>
+              <div class="fecha-info">
+                <p class="ciudad">Miami, FL</p>
+                <p class="recinto">Hard Rock Stadium</p>
+              </div>
+              <button class="btn-sold-out">Sold Out</button>
+            </div>
+
+            <div class="fecha">
+              <div class="fecha-numero">
+                <span class="mes">OCT</span>
+                <span class="dia">28</span>
+              </div>
+              <div class="fecha-info">
+                <p class="ciudad">Atlanta, GA</p>
+                <p class="recinto">Mercedes-Benz Stadium</p>
+              </div>
+              <button class="btn-ticket">Tickets</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Panel mapa -->
+        <div class="mapa-gira reveal-right">
+          <img
+            src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&q=80&w=1000"
+            alt="Tour Visual"
+            class="mapa-fondo"
+            referrerpolicy="no-referrer"
+          />
+          <div class="mapa-contenido">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="#ff0000" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <h3>Interactive Tour Map</h3>
+            <p>Find the nearest show and plan your journey.</p>
+            <button class="btn-outline">Open Map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO y TIENDA -->
+  <section id="contact" class="section fondo-contacto">
+    <div class="container grid-2">
+
+      <!-- Formulario -->
+      <div class="reveal-left">
+        <h2>Get in Touch</h2>
+        <form class="formulario" onsubmit="return false">
+          <div class="fila-form">
+            <div class="campo">
+              <label class="etiqueta-campo">First Name</label>
+              <input type="text" class="input" placeholder="Abel" />
+            </div>
+            <div class="campo">
+              <label class="etiqueta-campo">Last Name</label>
+              <input type="text" class="input" placeholder="Tesfaye" />
+            </div>
+          </div>
+          <div class="campo">
+            <label class="etiqueta-campo">Email Address</label>
+            <input type="email" class="input" placeholder="xo@theweeknd.com" />
+          </div>
+          <div class="campo">
+            <label class="etiqueta-campo">Message</label>
+            <textarea class="input textarea" rows="4" placeholder="Your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn-send">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Tienda -->
+      <div class="reveal-right">
+        <div class="tienda-cabecera">
+          <h2>XO Store</h2>
+          <a href="https://xo.store/collections/all-merch" target="_blank" class="shop-all">
+            Shop All
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <div class="tienda-grid">
+
+          <div class="producto">
+            <div class="producto-foto">
+              <img src="assets/img/merch1.png" alt="THURSDAY TEE" referrerpolicy="no-referrer" />
+              <button class="btn-carrito" aria-label="Add to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </button>
+            </div>
+            <h4 class="producto-nombre">THURSDAY TEE</h4>
+            <p class="producto-precio">$55.00</p>
+          </div>
+
+          <div class="producto">
+            <div class="producto-foto">
+              <img src="assets/img/merch2.png" alt="XO Classic Hoodie" referrerpolicy="no-referrer" />
+              <button class="btn-carrito" aria-label="Add to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </button>
+            </div>
+            <h4 class="producto-nombre">XO Classic Hoodie</h4>
+            <p class="producto-precio">$65.00</p>
+          </div>
+
+          <div class="producto">
+            <div class="producto-foto">
+              <img src="assets/img/merch3.png" alt="Starboy Poster" referrerpolicy="no-referrer" />
+              <button class="btn-carrito" aria-label="Add to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </button>
+            </div>
+            <h4 class="producto-nombre">Starboy Poster</h4>
+            <p class="producto-precio">$20.00</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="col-footer col-marca">
+          <div class="logo-footer">XO / THE WEEKND</div>
+          <p class="footer-desc">Join the XO community for exclusive updates on music, tours, and limited edition merchandise.</p>
+          <form class="footer-form" onsubmit="return false">
+            <input type="email" class="footer-input" placeholder="Email Address" required />
+            <button type="submit" class="footer-btn">JOIN</button>
+          </form>
+        </div>
+
+        <div class="col-footer">
+          <h4 class="col-titulo">SHOP</h4>
+          <a href="#" class="col-enlace">New Arrivals</a>
+          <a href="#" class="col-enlace">Vinyl & CD</a>
+          <a href="#" class="col-enlace">Apparel</a>
+          <a href="#" class="col-enlace">Accessories</a>
+        </div>
+
+        <div class="col-footer">
+          <h4 class="col-titulo">TOUR</h4>
+          <a href="#" class="col-enlace">North America</a>
+          <a href="#" class="col-enlace">Europe</a>
+          <a href="#" class="col-enlace">South America</a>
+          <a href="#" class="col-enlace">Asia & Oceania</a>
+        </div>
+
+        <div class="col-footer">
+          <h4 class="col-titulo">SUPPORT</h4>
+          <a href="#" class="col-enlace">Contact Us</a>
+          <a href="#" class="col-enlace">Shipping Info</a>
+          <a href="#" class="col-enlace">Returns</a>
+          <a href="#" class="col-enlace">FAQ</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-fondo">
+      <div class="container footer-fondo-inner">
+        <p class="copyright">© 2026 THE WEEKND. ALL RIGHTS RESERVED. DESIGNED FOR XO.</p>
+        <div class="redes">
+          <a href="https://www.instagram.com/theweeknd/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://x.com/theweeknd" aria-label="Twitter" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/theweeknd/?locale=es_ES" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+        <div class="enlaces-legales">
+          <a href="#">PRIVACY</a>
+          <a href="#">TERMS</a>
+          <a href="#">COOKIES</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Volver Arriba -->
+  <button id="scroll-top" class="btn-scroll-top" aria-label="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+
+  <!-- Player flotante de Spotify -->
+  <div id="spotify-player-container" class="player-spotify floating hidden">
+    <button id="close-player" class="cerrar-player" aria-label="Close Player">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <iframe id="spotify-player" src="" width="100%" height="152" frameborder="0" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+</body>
+</html>
